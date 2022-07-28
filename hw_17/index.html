@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <button class="btn">Click</button>
+
+    <div>
+        <p>Набирите произвольный текст:</p>
+        <input type="text" name="testInput_1" id="testInput_1" oninput="testFunction()">
+        <p id="txt"></p>
+    </div>
+
+
+    <div>
+        <p>Какое у Вас любимое животное:</p>
+        <select id="animals" onchange="animalsFunction()">
+            <option value="Животное 1">Собака
+            <option value="Животное 2">Кошка
+            <option value="Животное 3">Грызун
+        </select>
+        <p id="info_2"></p>
+    </div>
+
+    <input type="text" name="onf" id="onf" onblur="blurFunction()" onfocus="focusFunction()">
+
+
+    <div class="conteiner">
+        <p>Нажми на меня</p>
+        <input type="text" class="keyBoard">
+        <button class="kbd">Send</button>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
