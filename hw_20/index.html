@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const people = [
+
+            { name: 'Сергей', year: 1983 },
+            { name: 'Света', year: 1990 },
+            { name: 'Алексей', year: 2000 },
+            { name: 'Иван', year: 1994 },
+
+        ];
+
+        const comments = [
+            { text: 'Прекрасный пост', id: 543278 },
+            { text: 'Очень хорошо', id: 126246 },
+            { text: 'Весьма неплохо', id: 126759 },
+            { text: 'Хуже некуда', id: 545329 }
+        ];
+
+        const commentIndex = comments.findIndex(comment => comment.id === 545329);
+
+        // comments.splice(commentIndex, 1);
+        // console.log(comments)
+
+        const commentsOne = comments.slice(0, commentIndex);
+        const commentsTwo = comments.slice(commentIndex + 1);
+        console.log(commentsOne)
+        console.log(commentsTwo)
+
+
+        const b6 = [48, 49, 50, 51];
+        const b7 = [61, 62, 63, 64];
+        const b = b6.concat(b7);
+        console.log(b);
+
+        const numbers = [42, 33, 12, 79, 10, 31, 6];
+
+        numbers.reverse();
+        console.log(numbers);
+
+        if (numbers.includes(2)) {
+            console.log(true);
+        }
+        else {
+            console.log(false);
+        }
+
+        people.forEach(function (person, index, pArr) {
+            console.log(person)
+
+        })
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
