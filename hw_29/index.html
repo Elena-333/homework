@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 0 auto;
+            font-size: 25px;
+        }
+
+        #button_3 {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: yellowgreen;
+            font-size: 40px;
+            bottom: 80px;
+            right: 100px;
+            border-radius: 100%;
+            opacity: 0;
+            transition: opacity 2s;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p> <button class="wayDown"> Вниз</button>Ясность нашей позиции очевидна: понимание сути ресурсосберегающих
+            технологий выявляет срочную потребность направлений прогрессивного развития. Принимая во внимание показатели
+            успешности, убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне
+            зависимых концептуальных решений. И нет сомнений, что интерактивные прототипы, инициированные исключительно
+            синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+            Учитывая ключевые сценарии поведения, социально-экономическое развитие обеспечивает актуальность как
+            самодостаточных, так и внешне зависимых концептуальных решений. Таким образом, понимание сути
+            ресурсосберегающих технологий прекрасно подходит для реализации позиций, занимаемых участниками в отношении
+            поставленных задач. А ещё независимые государства представляют собой не что иное, как квинтэссенцию победы
+            маркетинга над разумом и должны быть ограничены исключительно образом мышления. </p>
+        <button class="up">Вверх</button>
+
+
+        <script>
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > - document.body.clientHeight / 4) {
+                    button_3.style.opacity = 1;
+                } else {
+                    button_3.style.opacity = 0
+                }
+            });
+
+
+
+
+            let down = document.querySelector('.wayDown');
+            let up = document.querySelector('.up');
+
+            function scrollClick() {
+                up.scrollIntoView({ block: "center", behavior: "smooth" });
+            }
+
+            down.addEventListener('click', scrollClick);
+
+            function scrollClickBeggin() {
+                down.scrollIntoView({ block: "center", behavior: "smooth" });
+            }
+
+            up.addEventListener('click', scrollClickBeggi);
+        </script>
+</body>
+
+</html>
